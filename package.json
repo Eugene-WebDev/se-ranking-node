@@ -1,0 +1,27 @@
+{
+  "name": "n8n-nodes-se-ranking",
+  "version": "1.0.9",
+  "description": "n8n connector for SE Ranking API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "n8n": {
+    "nodes": [
+      "dist/nodes/SeRanking/SeRanking.node.js"
+    ],
+    "credentials": [
+      "dist/credentials/SeRankingApi.credentials.js"
+    ]
+  },
+  "devDependencies": {
+    "n8n-workflow": "latest",
+    "n8n-core": "latest",
+    "typescript": "^4.9.0",
+    "@types/node": "^18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
